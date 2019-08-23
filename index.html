@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang='en' dir='ltr'>
 
 <head>
-  <meta charset="utf-8">
+  <meta charset='utf-8'>
   <title>Ryuta Eguchi | Web Developer</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Proza+Libre" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-  <script src="https://kit.fontawesome.com/cb40d8ce30.js"></script>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' type='text/css' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css'>
+  <link rel='stylesheet' type='text/css' href='style.css'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans|Proza+Libre' rel='stylesheet'>
+  <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.8.1/css/all.css' integrity='sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf' crossorigin='anonymous'>
+  <script src='https://kit.fontawesome.com/cb40d8ce30.js'></script>
 </head>
 
 
@@ -19,130 +19,159 @@
   <header>
     <nav>
       <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href='#home'>Home</a></li>
+        <li><a href='#about'>About</a></li>
+        <li><a href='#projects'>Projects</a></li>
+        <li><a href='#contact'>Contact</a></li>
       </ul>
     </nav>
-    <section class='intro'>
+    <section class='intro' id='home'>
       <h1>
-        Hi, I'm Ryuta
+        Hi, I'm <span class='name'>Ryuta</span>
       </h1>
-      <h3>I'm a fullstack web developer from Santa Barbara, CA</h3>
+      <h3>I'm a fullstack web developer from Chicago</h3>
     </section>
   </header>
   <main>
-    <section class="bio" id="about">
-      <h3>About Me</h3>
-      <p>I am passionate about coding and getting things done! Nothing satisfies me like a finished product, whether it be a solo project or a collaborative endeavor with bright minds.</p>
-      <p>I love playing sports of all kinds, dominating friends in board games, and working on something bigger than myself.</p>
+    <section class='bio' id='about'>
+      <p class='section_header'>About Me</p>
+      <p class='bio_detail'>I am passionate about coding and getting things done! Nothing satisfies me like a finished product, whether it be a solo project or a collaborative endeavor with bright minds.</p>
+      <p class='bio_detail'>I love playing sports of all kinds, dominating friends in board games, and working on something bigger than myself.</p>
     </section>
-    <!-- <section class="skills">
+    <!-- <section class='skills'>
       <h1>Skills</h1>
       <div class='fronend-skills skills-group'>
         <h2>Frontend</h2>
         <div class='dev-icons'>
-          <i class="fab fa-html5"></i>
-          <i class="fab fa-css3-alt"></i>
-          <i class="fab fa-js-square"></i>
-          <i class="fab fa-react"></i>
+          <i class='fab fa-html5'></i>
+          <i class='fab fa-css3-alt'></i>
+          <i class='fab fa-js-square'></i>
+          <i class='fab fa-react'></i>
         </div>
       </div>
       <div class='backend-skills skills-group'>
         <h2>Backend</h2>
-        <div class="dev-icons">
-          <i class="fab fa-node-js"></i>
+        <div class='dev-icons'>
+          <i class='fab fa-node-js'></i>
         </div>
       </div>
     </section> -->
-    <section class="projects" id="projects">
-      <h1>Projects</h1>
-      <div class="projects-container">
-        <div class="project">
-            <div class="project-desc-header">
-              <h2>City Check</h2>
-              <a href='https://github.com/ryutae/RyutaEguchiProfile' target="_blank">
-                <i class="fab fa-github fa-lg" alt='github logo'></i>
+    <section class='projects' id='projects'>
+      <p class='section_header'>Projects</p>
+      <div class='projects-container'>
+        <div class='project'>
+            <div class='project-desc-header'>
+                <a href='https://ryutae-challenge-tracker-app.now.sh/' target='_blank'>
+                  <p class='project-title'>ToDueBy</p>
+                </a>
+            </div>
+            <a href='https://ryutae-todueby.now.sh/' target='_blank'>
+              <img src='public/Dashboard.png' class='project_screenshot' alt='ToDueBy screenshot'>
+            </a>
+            <p class='technology'>React | Node | Express | PostgreSQL | Heroku</p>
+            <p class='proj-summary'>Fullstack app that allows you to create and join projects with your co-workers to create and assign tasks amongst your team.</p>
+            <ul class='proj-details'>
+              <li>PostgreSQL for persistent data storage for users, projects, and tasks</li>
+              <li>Mocha + Chai testing for API</li>
+            </ul>
+            <a href='https://github.com/ryutae/ChallengeTracker-client' target='_blank'>
+              <i class='fab fa-github fa-lg' alt='github logo'></i>
+            </a>
+        </div>
+        <div class='project'>
+            <div class='project-desc-header'>
+                <a href='https://ryutae-challenge-tracker-app.now.sh/' target='_blank'>
+                  <p class='project-title'>Challenge Tracker</p>
+                </a>
+            </div>
+            <a href='https://ryutae-challenge-tracker-app.now.sh/' target='_blank'>
+              <img src='ChallengeTrackerScreenshot.png' class='project_screenshot' alt='Challenge Tracker screenshot'>
+            </a>
+            <p class='technology'>React | Node | Express | PostgreSQL</p>
+            <p class='proj-summary'>Fullstack app that allows you create or join groups to track challenges with friends or co-workers</p>
+            <ul class='proj-details'>
+              <li>PostgreSQL for persistent data storage for users, groups, and challenges</li>
+              <li>Mocha + Chai testing for API</li>
+            </ul>
+            <a href='https://github.com/ryutae/ChallengeTracker-client' target='_blank'>
+              <i class='fab fa-github fa-lg' alt='github logo'></i>
+            </a>
+        </div>
+        <div class='project'>
+            <div class='project-desc-header'>
+              <a href='http://ryutae.github.io/CityCheck' target='_blank'>
+                <p class='project-title'>City Check</p>
               </a>
             </div>
-            <img src="CityCheckScreenshot.png" alt="CityCheck screenshot">
-            <p class="technology">HTML | CSS | JavaScript | jQuery</p>
+            <a href='http://ryutae.github.io/CityCheck' target='_blank'>
+              <img src='CityCheckScreenshot.png' class='project_screenshot' alt='CityCheck screenshot'>
+            </a>
+            <p class='technology'>HTML | CSS | JavaScript | jQuery</p>
             <p class='proj-summary'>Single-page web application that makes AJAX call to multiple APIs to display information about any city</p>
             <ul class='proj-details'>
               <li>Foursquare API shows top 10 recommended places to check out</li>
               <li>OpenWeatherMap API shows current weather, along with a weather forecast</li>
             </ul>
+            <a href='https://github.com/ryutae/CityCheck' target='_blank'>
+              <i class='fab fa-github fa-lg' alt='github logo'></i>
+            </a>
         </div>
-        <div class="project">
-            <div class="project-desc-header">
-              <h2>City Check</h2>
-              <a href='https://github.com/ryutae/CityCheck' target="_blank">
-                <i class="fab fa-github fa-lg" alt='github logo'></i>
-              </a>
+<!-- old project to hide -->
+        <!-- <div class='project'>
+          <div class='project-desc'>
+            <div class='project-desc-header'>
+              <p class='project-title'>Sound Quiz App</p>
             </div>
-            <img src="CityCheckScreenshot.png" alt="CityCheck screenshot">
-            <p class="technology">HTML | CSS | JavaScript | jQuery</p>
-            <p class='proj-summary'>Single-page web application that makes AJAX call to multiple APIs to display information about any city</p>
-            <ul class='proj-details'>
-              <li>Foursquare API shows top 10 recommended places to check out</li>
-              <li>OpenWeatherMap API shows current weather, along with a weather forecast</li>
-            </ul>
-        </div>
-
-        <div class="project">
-          <div class="project-desc">
-            <div class="project-desc-header">
-              <h2>Sound Quiz App</h2>
-              <a href='https://github.com/ryutae/SoundQuizApp' target="_blank">
-                <i class="fab fa-github fa-lg" alt='github logo'></i>
-              </a>
-            </div>
-            <img src="SoundQuizScreenshot.png" alt="sound quiz screenshot">
-            <p class="technology">HTML | CSS | JavaScript | jQuery</p>
+            <img src='SoundQuizScreenshot.png' class='project_screenshot' alt='sound quiz screenshot'>
+            <p class='technology'>HTML | CSS | JavaScript | jQuery</p>
             <p class='proj-summary'> An interactive quiz app that tests prospective sound technicians on sound theory</p>
+            <ul class='proj-details'>
+              <li>Foursquare API shows top 10 recommended places to check out</li>
+              <li>OpenWeatherMap API shows current weather, along with a weather forecast</li>
+            </ul>
+            <a href='https://github.com/ryutae/SoundQuizApp' target='_blank'>
+              <i class='fab fa-github fa-lg' alt='github logo'></i>
+            </a>
           </div>
-        </div>
+        </div> -->
       </div>
 
     </section>
   </main>
-  <footer>
-    <section class="contact" id="contact">
+  <footer id='contact'>
       <h2>Contact Me</h2>
-      <div class="contact-container">
-        <div class="linkedin">
-          <a href="https://www.linkedin.com/in/ryuta-eguchi/" target="_blank">
-            <i class="fab fa-linkedin fa-lg"></i>
+      <div class='contact-container'>
+        <div class='linkedin'>
+          <a href='https://www.linkedin.com/in/ryuta-eguchi/' target='_blank'>
+            <i class='fab fa-linkedin fa-lg'></i>
           </a>
-          <div class="username">
-            <a href="https://www.linkedin.com/in/ryuta-eguchi/" target="_blank">
+          <div class='username'>
+            <a href='https://www.linkedin.com/in/ryuta-eguchi/' target='_blank'>
               <p>Connect</p>
             </a>
           </div>
         </div>
-        <div class="github">
-          <a href="https://github.com/ryutae" target="_blank">
-            <i class="fab fa-github-square fa-lg"></i>
+        <div class='github'>
+          <a href='https://github.com/ryutae' target='_blank'>
+            <i class='fab fa-github-square fa-lg'></i>
           </a>
-          <div class="username">
-            <a href="https://github.com/ryutae" target="_blank">
+          <div class='username'>
+            <a href='https://github.com/ryutae' target='_blank'>
               <p>RyutaE</p>
             </a>
           </div>
         </div>
-        <div class="email">
-          <a href="mailto:ryuta.eguchi@gmail.com" target="_blank">
-            <i class="fas fa-envelope-square fa-lg"></i>
+        <div class='email'>
+          <a href='mailto:ryuta.eguchi@gmail.com' target='_blank'>
+            <i class='fas fa-envelope-square fa-lg'></i>
           </a>
-          <div class="username">
-            <a href="mailto:ryuta.eguchi@gmail.com" target="_blank">
+          <div class='username'>
+            <a href='mailto:ryuta.eguchi@gmail.com' target='_blank'>
               <p>ryuta.eguchi@gmail.com</p>
             </a>
           </div>
         </div>
       </div>
-    </section>
   </footer>
 </body>
 
