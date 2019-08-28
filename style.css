@@ -27,6 +27,8 @@ ul {
   font-size: 1.6rem;
   font-weight: 750;
   text-align: center;
+  margin-top: 1.4rem;
+
 }
 /*-------HEADER-----------*/
 header {
@@ -201,7 +203,7 @@ section:nth-child(even) {
 footer {
   background-color: black;
   color: white;
-  padding: 4px 0;
+  padding: 1.5rem 0;
 }
 
 footer img {
