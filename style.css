@@ -110,7 +110,7 @@ section:nth-child(even) {
 .bio_detail {
   max-width: 600px;
   margin: 0 auto;
-  text-align: left;
+  text-align: justify;
   padding: 7px;
   transition: 0.2s;
   color: #d4d3d3
@@ -159,7 +159,7 @@ section:nth-child(even) {
 }
 
 .project_screenshot {
-  max-height: 200px;
+  height: 200px;
   border-radius: 3px;
   box-shadow: 3px 3px#9e9e9e;
   transition: 0.3s;
